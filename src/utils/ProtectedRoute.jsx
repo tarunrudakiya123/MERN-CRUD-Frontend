@@ -12,7 +12,7 @@ const ProtectedRoute = ({ children }) => {
     const checkAuth = async () => {
       try {
         const { data } = await API.get("/auth/check");
-        setUser(data.user);
+        setUser(data?.user);
         setLoading(false);
       } catch (error) {
         console.error("Error checking authentication", error);
@@ -20,6 +20,7 @@ const ProtectedRoute = ({ children }) => {
       }
       setLoading(false);
     };
+
     checkAuth();
   }, []);
 

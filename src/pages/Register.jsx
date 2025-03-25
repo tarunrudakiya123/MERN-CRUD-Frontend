@@ -31,7 +31,7 @@ const Register = () => {
       className="d-flex justify-content-center align-items-center"
       style={{ minHeight: "100vh" }}
     >
-      <Card className="p-4 shadow" style={{ width: "400px" }}>
+      <Card className="p-4 shadow border" style={{ width: "400px" }}>
         <h2 className="text-center mb-4">Register</h2>
 
         {errors?.length > 0 &&

@@ -32,6 +32,7 @@ export const fetchProducts = (page = 1, limit) =>
 
 export const createProduct = (productData) =>
   handleRequest(() => API.post("/products", productData));
+
 export const updateProduct = (id, productData) =>
   handleRequest(() => API.put(`/products/${id}`, productData));
 export const deleteProduct = (id) =>
